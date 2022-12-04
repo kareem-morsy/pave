@@ -93,7 +93,11 @@ $('.partners-slider').slick({
 });
 
 
-$('.Testimonials-slider').slick();
+$('.Testimonials-slider').slick({
+    autoplay : true,
+    infinite: true,
+    speed: 300,
+});
 
 
 

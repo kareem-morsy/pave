@@ -1,3 +1,51 @@
-@media (max-width : 767px){
+@media (max-width : 767px) {
+    .slider-section {
+        .carousel-inner {
+            .slider-overlay {
+                .overlay-content {
+                    h1 {
+                        font-size: 10vw !important;
+                    }
+                }
+            }
 
+            .carousel-item {
+                // height: 100vh !important;
+            }
+
+        }
+
+    }
+
+    .about-section {
+        .about-img {
+            width: 100%;
+        }
+
+        .about-card {
+            width: 100%;
+            padding: 21px 10px 25px 10px;
+            margin: 15px 0px;
+        }
+    }
+
+    .news-section{
+        min-height: 228vh;
+    }
+
+    .Testimonials-card{
+        width: 100%;
+    }
+
+    .service-card{
+        width: 100% !important;
+    }
+
+    .navbar-collapse {
+        display: none;
+    }
+
+    .Testimonials-card{
+        width: 100% !important;
+    }
 }

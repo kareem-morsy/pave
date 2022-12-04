@@ -217,20 +217,17 @@ header .navi nav .nav-item .nav-link {
 /*end slider section*/
 /*start about section*/
 .about-section {
-  margin: 6% 0%;
+  margin: 5% 0%;
 }
-.about-section .about-collection {
-  position: relative;
-  display: flex;
-}
-.about-section .about-collection .about-img {
-  width: 55%;
-  height: 500px;
+.about-section .about-img {
+  width: 80%;
+  height: 350px;
   position: relative;
   z-index: 1;
   border-radius: 5px;
+  margin: 0px auto;
 }
-.about-section .about-collection .about-img .about-overlay {
+.about-section .about-img .about-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -240,42 +237,88 @@ header .navi nav .nav-item .nav-link {
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: 5px;
 }
-.about-section .about-collection .about-img img {
+.about-section .about-img img {
   width: 100%;
   height: 100%;
   border-radius: 5px;
 }
-.about-section .about-collection .about-content {
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
-  height: 350px;
-  width: 38%;
-  margin-left: -5%;
+.about-section .about-content {
+  width: 90%;
   z-index: 9999;
   color: #083791;
-  margin-top: 5%;
-  padding: 2%;
   border-radius: 5px;
-  background-color: #efefef;
 }
-.about-section .about-collection .about-content h2 {
+.about-section .about-content h2 {
   font-weight: bold;
+  color: #543b4d;
 }
-.about-section .about-collection .about-content p {
+.about-section .about-content p {
   color: #272727;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   margin: 10px 0px 20px 0px;
+  text-align: justify;
 }
-.about-section .about-collection .about-content ul {
+.about-section .about-content ul {
   list-style-type: disc !important;
   padding: 0% 4% !important;
   margin: 3% 5%;
 }
-.about-section .about-collection .about-content ul li {
-  color: #FF5E14;
+.about-section .about-content ul li {
+  color: #5b474c;
   margin: 10px 0px;
   font-size: 18px;
   font-weight: 500;
+}
+.about-section .about-content .more-btn, .about-section .about-content .news-section .news-more, .news-section .about-section .about-content .news-more {
+  margin: 25px 0px !important;
+  background-color: #543b4d;
+}
+.about-section .about-card {
+  position: relative;
+  text-align: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+  padding: 45px 10px 25px 10px;
+  border-radius: 5px;
+  width: 90%;
+  margin: 45px 0px;
+  transition: all 0.5s ease-in-out;
+}
+.about-section .about-card .about-num {
+  position: absolute;
+  right: 25px;
+  top: 15px;
+  font-size: 45px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.2);
+}
+.about-section .about-card .about-card-icon {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: #543b4d;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  margin: 15px auto;
+}
+.about-section .about-card h4 {
+  font-weight: bold;
+  margin: 15px 0px;
+  font-size: 23px;
+}
+.about-section .about-card:hover {
+  background-color: #543b4d;
+  color: #ffffff;
+}
+.about-section .about-card:hover .about-num {
+  color: #ffffff;
+}
+.about-section .about-card:hover .about-card-icon {
+  background-color: #ffffff !important;
+  color: #543b4d;
 }
 
 /*end about section*/
@@ -286,7 +329,7 @@ header .navi nav .nav-item .nav-link {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 9;
   padding: 3% 0%;
 }
@@ -298,7 +341,10 @@ header .navi nav .nav-item .nav-link {
   padding: 5% 0% 5% 0%;
   position: relative;
   z-index: 999;
-  min-height: 700px;
+  min-height: 105vh;
+}
+.news-section .section-overlay {
+  border-radius: 12px 12px 0px 0px;
 }
 .news-section h2 {
   text-align: center;
@@ -307,7 +353,7 @@ header .navi nav .nav-item .nav-link {
   margin-bottom: 45px;
 }
 .news-section .news-more {
-  background-color: #FF5E14;
+  background-color: #543b4d;
 }
 
 .news-card {
@@ -317,6 +363,7 @@ header .navi nav .nav-item .nav-link {
   background-color: #fff;
   border-radius: 12px;
   margin-bottom: 15px;
+  padding-bottom: 5px;
 }
 .news-card .news-img {
   height: 60%;
@@ -334,18 +381,19 @@ header .navi nav .nav-item .nav-link {
   border-top-right-radius: 5px;
   transition: all 0.5s ease-in-out;
   display: block;
-  border-radius: 12px;
+  border-radius: 12px 12px 0px 0px;
 }
 .news-card h4 {
   margin: 10px 0px 0px 0px;
   padding: 0px 5px;
-  color: #c3895d;
+  color: #543b4d;
   font-weight: 500;
 }
 .news-card .news-date {
   display: flex;
-  color: #FF5E14 !important;
-  margin: 5px;
+  color: #543b4d !important;
+  margin: 5px 10px;
+  font-weight: 600;
 }
 .news-card .news-date span {
   margin-right: 5px;
@@ -353,7 +401,7 @@ header .navi nav .nav-item .nav-link {
 .news-card p {
   margin-top: 0px;
   padding: 0 10px 10px 10px;
-  color: #083791;
+  color: #272727;
 }
 
 /*end news section*/
@@ -399,7 +447,8 @@ header .navi nav .nav-item .nav-link {
 /*end success section*/
 /*start services section*/
 .service-section {
-  padding: 5% 0%;
+  padding: 0%;
+  padding-bottom: 3%;
 }
 .service-section .service-content h2 {
   font-weight: 600;
@@ -467,6 +516,18 @@ header .navi nav .nav-item .nav-link {
 }
 
 /*end service section*/
+/*start works section*/
+.works .news-img {
+  width: 100%;
+  height: 300px;
+}
+.works .news-img img {
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+}
+
+/*end works section*/
 /*start partners section*/
 .partners {
   background-color: #000;
@@ -495,6 +556,19 @@ header .navi nav .nav-item .nav-link {
 
 /*end partners section*/
 /*start blogs apages*/
+.blogs h2 {
+  font-weight: bold;
+  color: #543b4d;
+  margin-bottom: 15px;
+  font-size: 35px;
+}
+.blogs .work-text {
+  margin: 15px 0px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #543b4d;
+}
+
 .article-section .article-img {
   width: 100%;
   height: 250px;
@@ -547,8 +621,8 @@ header .navi nav .nav-item .nav-link {
   margin: 15px 5px;
   font-size: 15px;
   border-radius: 15px;
-  border: 1px solid #272727;
-  background-color: #272727;
+  border: 1px solid #554b55;
+  background-color: #554b55;
   position: relative;
   display: inline-block;
   vertical-align: top;
@@ -570,7 +644,7 @@ header .navi nav .nav-item .nav-link {
   background-size: cover;
   padding: 5% 0%;
   position: relative;
-  height: 85vh;
+  min-height: 75vh;
 }
 .Testimonials .Testimonials-overlay {
   position: absolute;
@@ -579,7 +653,7 @@ header .navi nav .nav-item .nav-link {
   left: 0;
   background-color: rgba(0, 0, 0, 0.8);
   width: 100%;
-  height: 85vh;
+  min-height: 75vh;
 }
 .Testimonials h2 {
   text-align: center;
@@ -591,21 +665,23 @@ header .navi nav .nav-item .nav-link {
   color: #fff;
 }
 .Testimonials .Testimonials-card {
-  background-color: #fff;
+  background-color: transparent;
   border-radius: 25px;
   padding: 15px;
   height: 300px;
   width: 50%;
-  margin: 5% auto;
+  margin: 25px auto;
+  text-align: center;
 }
 .Testimonials .Testimonials-card .user-info {
   display: flex;
+  flex-direction: column;
 }
 .Testimonials .Testimonials-card .user-img {
   width: 75px;
   height: 75px;
   border-radius: 50%;
-  margin-right: 15px;
+  margin: 10px auto;
 }
 .Testimonials .Testimonials-card .user-img img {
   width: 100%;
@@ -613,10 +689,21 @@ header .navi nav .nav-item .nav-link {
   border-radius: 50%;
 }
 .Testimonials .Testimonials-card .user-title {
-  margin-top: 15px;
+  color: #ffffff;
+  margin: 25px 0px;
 }
 .Testimonials .Testimonials-card .user-title h4 {
   margin-bottom: 2px;
+  color: #ffffff;
+}
+.Testimonials .Testimonials-card .client-opinion {
+  color: #ffffff;
+}
+.Testimonials .slick-arrow {
+  background: rgba(255, 255, 255, 0.15);
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
 }
 
 /*end Testimonials section*/
@@ -656,4 +743,32 @@ footer p {
   color: #ffffff;
 }
 
-/*end footer*//*# sourceMappingURL=style-ltr.css.map */
+/*end footer*/
+@media (max-width: 767px) {
+  .slider-section .carousel-inner .slider-overlay .overlay-content h1 {
+    font-size: 10vw !important;
+  }
+  .about-section .about-img {
+    width: 100%;
+  }
+  .about-section .about-card {
+    width: 100%;
+    padding: 21px 10px 25px 10px;
+    margin: 15px 0px;
+  }
+  .news-section {
+    min-height: 228vh;
+  }
+  .Testimonials-card {
+    width: 100%;
+  }
+  .service-card {
+    width: 100% !important;
+  }
+  .navbar-collapse {
+    display: none;
+  }
+  .Testimonials-card {
+    width: 100% !important;
+  }
+}/*# sourceMappingURL=style-ltr.css.map */
